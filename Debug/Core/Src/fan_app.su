@@ -1,3 +1,0 @@
-fan_app.c:11:6:init_system	8	static
-fan_app.c:22:6:print_header	8	static
-fan_app.c:33:6:application	8	static

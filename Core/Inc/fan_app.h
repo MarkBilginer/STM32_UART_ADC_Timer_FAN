@@ -1,8 +1,10 @@
-/*
- * fan_app.h
+/** @file fan_app.h
+ *  @brief Application layer helper and wrapper function declarations.
+ *  Aims to make the code more readable. Application layer,
+ *  library layer and driver layer concept was in mind.
  *
- *  Created on: May 28, 2021
- *      Author: mark
+ *  @author Mark Bilginer (GitHub: MarkBilginer)
+ *  @bug No known bugs.
  */
 
 #ifndef INC_FAN_APP_H_
@@ -12,44 +14,33 @@
 extern "C" {
 #endif
 
-/* Includes ------------------------------------------------------------------*/
+/* -- Includes -- */
+
+/* -- Library abstraction layer -- */
 #include "STM32_fan_lib.h"
 
-/* Private includes ----------------------------------------------------------*/
-/* USER CODE BEGIN Includes */
+/* -- Exported functions prototypes -- */
 
-/* USER CODE END Includes */
-
-/* Exported types ------------------------------------------------------------*/
-/* USER CODE BEGIN ET */
-
-/* USER CODE END ET */
-
-/* Exported constants --------------------------------------------------------*/
-/* USER CODE BEGIN EC */
-
-/* USER CODE END EC */
-
-/* Exported macro ------------------------------------------------------------*/
-/* USER CODE BEGIN EM */
-
-/* USER CODE END EM */
-
-
-/* Exported functions prototypes ---------------------------------------------*/
-void init_system(void);
+/** @brief The application logic flow is here.
+ *  @param None
+ *  @return None
+ */
 void application(void);
+
+/** @brief The application header.
+ *
+ *  Includes credentials and user manual.
+ *
+ *  @param None
+ *  @return None
+ */
 void print_header(void);
 
-/* USER CODE BEGIN EFP */
-
-/* USER CODE END EFP */
-
-/* Private defines -----------------------------------------------------------*/
-
-/* USER CODE BEGIN Private defines */
-
-/* USER CODE END Private defines */
+/** @brief Itializes system components.
+ *  @param None
+ *  @return None
+ */
+void init_system(void);
 
 #ifdef __cplusplus
 }
